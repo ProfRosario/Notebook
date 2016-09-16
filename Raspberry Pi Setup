@@ -1,11 +1,11 @@
 Using NOOBS to setup Raspberry Pi  (http://elinux.org/RPi_Easy_SD_Card_Setup)
 
-The Raspberry Pi Foundation has released an easy to use tool to setup the Raspberry SD card. The tool is called NOOBS, 
-which means New Out Of Box Software. It provides an simple way, with very little hassle, to install various Raspberry Pi 
-distribution from one simple menu selection. The original software is around 1 GB download. If you're limited in bandwidth, 
-I recommend you download compressed version from from Raspberry Pi orginization, which is around 500 MB. Follow the following 
-steps:
+The Raspberry Pi Foundation has released an easy to use software tool to setup the Raspberry SD card. The tool is called NOOBS, 
+which means New Out Of Box Software. It's a simple tool, with very little hassle or pain, to install various Raspberry Pi 
+distribution from one simple menu selection. The original software is around 1 GB download, however you can download a compressed
+version from from Raspberry Pi orginization, which is less than 500 MB. 
 
+To install the Raspberry distribution on the SD card:
 
 1) Download NOOBS from the raspberrypi.org downloads page
 
