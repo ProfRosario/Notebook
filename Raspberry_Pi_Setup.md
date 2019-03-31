@@ -1,3 +1,6 @@
+
+Setup Raspberry Pi with NOOBS
+========
 Using NOOBS to setup Raspberry Pi  (http://elinux.org/RPi_Easy_SD_Card_Setup)
 
 The Raspberry Pi Foundation has released an easy to use software tool to setup the Raspberry SD card. The tool is called NOOBS, 
@@ -14,20 +17,23 @@ To install the Raspberry distribution on the SD card:
 
 3) Format the disk. The easies SD card format tool is SD Associate
 
-=== For Windows
+For Windows
+======
 
-	a.  Download and install the SD Association's Formatting tool from https://www.sdcard.org/downloads/formatter_4/eula_windows/
+	a.  Download and install the SD Association's Formatting tool from [https://www.sdcard.org/downloads/formatter_4/eula_windows/](https://www.sdcard.org/downloads/formatter_4/eula_windows/)
         Open the Application you have just installed
         b. Set "FORMAT SIZE ADJUSTMENT" to ON in the Options menu.
         c. Make sure you have selected the Drive your SD Card is inserted in
         Click "Format"
         
-=== For Mac
-        a. Download and install the SD Association's Formatting tools from https://www.sdcard.org/downloads/formatter_4/eula_mac/
+For Mac
+==========
+        a. Download and install the SD Association's Formatting tools from [https://www.sdcard.org/downloads/formatter_4/eula_mac/](https://www.sdcard.org/downloads/formatter_4/eula_mac/)
         b. Select "Overwrite format"
         c. Make sure you have selected your SD Card, and not something else
         d. Click "Format"
-===For Linux
+For Linux
+======
         a. Use gparted (or the command-line version parted if you prefer), if you don't have it, install it as you usually would.
         b. Format the entire disk as FAT32 (FAT16 will not work! Make sure you select the correct disk!)
 
