@@ -5,13 +5,13 @@ To create private and public SSH keys, type the following command:
 
 > <code>$ ssh-keygen -t rsa</code>
 
-This command tells ssh to generate a rsa type key. The following message will display:
+This command tells ssh to generate a rsa type key. The following messages will display:
 
 <code>Generating public/private rsa key pair.</code>
 
 <code>Enter file in which to save the key (/c/users/username/.ssh/id_rsa): </code>
 
-If the file path is correct, do not type any informatin just press <code>Enter</code>. The following message will appear:
+If the file path is correct, do not type any informatin just press <code>Enter</code>. The following messages will appear:
 
 > <code>/c/users/username/.ssh/id_rsa already exists.</code>
 
@@ -50,13 +50,13 @@ The <code>-p</code> is requesting to change the passphrase only. Don't worry thi
 Start the SSH Agent
 ===================
 
-The the following commands:
+Type the following commands:
 
 > <code>$ ssh-agent $SHELL</code>
 
 > <code>$ ssh-add</code>
 
-The following message will appear:
+The following messages will appear:
 
 > <code>Enter passphrase for /home/you/.ssh/id_rsa:</code>
 
