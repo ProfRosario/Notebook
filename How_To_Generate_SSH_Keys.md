@@ -7,7 +7,7 @@ ssh-keygen -t rsa
 ```
 This command tells ssh to generate a rsa type key. The following messages will display:
 
-```bash
+```
 Generating public/private rsa key pair.
 
 Enter file in which to save the key (/c/users/username/.ssh/id_rsa):
@@ -75,7 +75,7 @@ Identify added: /home/you/.ssh/id_rsa
 Copy your public ssh key to your <code> ~/.ssh</code> folder. In the .ssh folder, you should see a text file named <code>authorized_keys</code>. If you don't see it, type the following command
 
 ```bash
-$ touch authorized_keys
+touch authorized_keys
 ```
   
 <code>touch</code> is a Linux command that creates a blank text file with nothing inside.
@@ -91,7 +91,7 @@ If you typed everything correctly, next time you run the ssh-agent you will not 
 # Transfering files without username or password
 
 ```bash
-$ git clone git@github.com:github_username/MyRepro.git
+git clone git@github.com:github_username/MyRepro.git
 ```
   
 If you set everything correctly, Github should not asking you for your username or password any more when cloning. If GitHub does, you probability made a mistake somewhere in the setup.
