@@ -3,18 +3,19 @@
 To create private and public SSH keys, type the following command:
 
 ```bash
-  $ ssh-keygen -t rsa
+ssh-keygen -t rsa
 ```
 This command tells ssh to generate a rsa type key. The following messages will display:
 
-```
+```bash
 Generating public/private rsa key pair.
 
 Enter file in which to save the key (/c/users/username/.ssh/id_rsa):
 ```
 
 If the file path is correct, do not type any informatin just press <code>Enter</code>. The following messages will appear:
-```
+
+```bash
 c/users/username/.ssh/id_rsa already exists.
 Overwrite (y/n)
 ```
@@ -47,7 +48,7 @@ Note, two keys will be generated, a public key and a private key. The private ke
 If you made a mistake or don't like your old passphrase, you can change it without changing the private and public keys. Type the following command:
 
 ```bash
-$ ssh-keygen -p 
+ssh-keygen -p 
 ```
 The <code>-p</code> is requesting to change the passphrase only. Don't worry this doesn't change the key.
 
@@ -57,17 +58,15 @@ The <code>-p</code> is requesting to change the passphrase only. Don't worry thi
 Type the following commands:
   
 ```bash
- ssh-agent $SHELL
+ssh-agent $SHELL
+
+ssh-add
 ```
-  
-```bash
-  $ ssh-add
-```
+
 The following messages will appear:
 ```
 Enter passphrase for /home/you/.ssh/id_rsa:
-```
-```  
+  
 Identify added: /home/you/.ssh/id_rsa
 ```
   
@@ -84,7 +83,7 @@ $ touch authorized_keys
 Next type the following command to append the public key to your authorized_keys file on the Pi, sending it over SSH:
 
 ```bash
-$ cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
 ```
 
 If you typed everything correctly, next time you run the ssh-agent you will not have to authenticate with your password.
